@@ -1,0 +1,821 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+@media (min-width: 400px) { .container{
+    max-width: 390px;
+}}
+
+@media (min-width: 768px) { .container{
+    max-width: 740px;
+}}
+
+@media (min-width: 1200px) { .container{
+    max-width: 1140px;
+} }
+
+@media (min-width: 1400px) { .container{
+    max-width: 1320px;
+}  }
+
+/* @media (min-width: 1920px){
+    .container{max-width: 1430px; }
+} */
+
+
+.btn {
+    display: inline-flex;
+    font-weight: 300;
+    text-align: center;
+    vertical-align: middle;
+    padding: 1.25rem, 1.75rem;
+    border-radius: 0.75rem;
+    border: 1px solid transparent;
+    background-color: transparent;
+    font-size: 1rem;
+}
+
+/*navbar-top*/
+#navbar-top{
+    display: none;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(112, 112, 112, .6);
+}
+
+#navbar-top .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+@media (min-width: 768px) { 
+    #navbar-top{
+    display: block;
+    }
+}
+
+#navbar-top .container .working-hours{
+    flex: 2; 
+    margin-left: 10px;
+}
+
+@media(min-width:1400px){#navbar-top .container .working-hours{
+margin-left: 40px;
+}
+}
+
+#navbar-top .container .working-hours i {
+    margin-right: 0.3rem;
+    font-size: 1.3rem;
+    color: #2BAAEC;
+}
+
+#navbar-top .container .socialmedia{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+}
+
+#navbar-top .container .socialmedia li{
+    margin-left: 1.3rem;
+}
+#navbar-top a{
+    font-size: 1.2rem;
+    color: #2BAAEC;
+}
+
+#navbar-top a :hover{
+    color:#25E6C8;
+}
+
+/*navbar-head*/
+#navbar-head{
+    font-family: 'Roboto Slab', serif;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+@media (min-width: 768px){
+    #navbar-head {padding-top: 2rem; padding-bottom: 2rem ;}
+}
+
+#navbar-head .container{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-top: 10px ;
+padding-bottom: 10px ;
+}
+
+@media (min-width: 768px){
+    #navbar-head .container{
+        padding-top: 20px ;
+padding-bottom: 20px ;
+    }
+}
+
+@media (min-width: 1400px){
+    #navbar-head .container{
+        padding-top: 30px ;
+padding-bottom: 30px ;
+    }
+}
+
+#navbar-head .container .logo{
+    height: 50px; 
+    
+}
+
+@media (min-width: 768px){
+    #navbar-head .container .logo{ 
+        height: 60px ; padding-left: 10px;  }
+}
+
+@media (min-width: 1400px){
+    #navbar-head .container .logo{ 
+        height: 70px ; padding-left: 40px; }
+}
+
+#navbar-head .menu{
+    flex: 2;
+    display:flex;
+    justify-content: flex-end;
+}
+
+#navbar-head ul{
+    display: none;
+    list-style: none;
+    margin: 0;   
+}
+
+@media(min-width: 768px){
+    #navbar-head ul{display: flex;}
+}
+
+#navbar-head ul li{   
+    padding-left: 2rem; 
+}
+
+#navbar-head .container ul li a{
+    font-size: 18px;  
+    color: #363636;
+    text-decoration: none;
+}
+
+#navbar-head .container ul li a:hover{    
+    color: #25E6C8;
+}
+
+#navbar-head .container .menu button{
+    font-size: 2rem;
+    padding: 0;
+}
+
+@media (min-width: 768px){
+    #navbar-head .container .menu button{
+    display: none;
+}
+}
+
+/*selection-showcase*/
+#showcase{
+    font-family: 'Roboto Slab', serif;
+    padding-top: 8px;
+    background: #DEDEDE;
+}
+
+#showcase .container  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+    padding-left: 30px;
+
+}
+
+#showcase .container .placeholder {
+    display: none;
+}
+
+@media (min-width: 768px) {#showcase .container .placeholder{
+    display: block;
+    height: 300px; 
+}}
+
+@media (min-width: 1200px) {#showcase .container .placeholder{
+    height: 450px; 
+}}
+
+@media (min-width: 1400px) {#showcase .container .placeholder{
+    height: 600px; 
+    padding-top: 10px;
+
+}}
+#showcase .container #li1Descrip{
+    font-size: 28px;
+    line-height: 1;
+    padding-bottom: 10px;
+}
+
+#showcase .container #li2Descrip{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px; 
+   margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {#showcase .container #li1Descrip{
+ font-size: 30px;
+ padding-bottom: 20px;
+ }}
+
+ @media (min-width: 1200px) {#showcase .container #li1Descrip{
+    font-size: 46px;
+    }}
+ @media (min-width: 1400px) {#showcase .container #li1Descrip{
+     font-size:  60px;  
+     line-height: 1.15;
+        
+  }} 
+  
+@media (min-width: 768px) {#showcase .container #li2Descrip{
+    font-size: 12px;
+    }}
+@media (min-width: 1200px) {#showcase .container #li2Descrip{
+        font-size: 14px;
+        }}
+    
+@media (min-width: 1400px) {#showcase .container #li2Descrip{
+        font-size:  18px; 
+        margin-top: 20px ;
+        margin-bottom: 30px;       
+     }}
+
+
+      #showcase .container ul{
+        padding-right: 0px;
+        padding-left:  0px; 
+    } 
+    
+#showcase .container ul li {
+    list-style: none;
+}
+
+@media (min-width: 768px) {#showcase .container ul{
+    margin-left: 40px;
+    padding-left: 20px;
+    
+}}
+
+@media (min-width: 1400px) {#showcase .container ul{
+padding-left:60px;
+margin-bottom:40px ;
+
+ }}
+
+
+#showcase .container .showcasetext button{
+    background: #25E6C8;
+      color: white;
+      padding: 0px 10px;
+      height:40px;
+      width: 120px;
+      align-items: center;
+      font-size: 14px;
+      border-radius: 10px;
+      font-weight: bold;
+      font-family: 'Roboto', sans-serif;
+}
+#showcase .container .showcasetext button:hover{
+    background-color: #2BAAEC;
+}
+
+
+@media (min-width: 768px) {#showcase .container .showcasetext button {
+    font-size: 12px;
+    }}
+@media (min-width: 1200px) {#showcase .container .showcasetext button{
+        font-size: 14px;
+        }}
+    
+@media (min-width: 1400px) {#showcase .container .showcasetext button{
+        font-size:  18px; 
+        height: 60px;
+        width: 240px;
+        padding: 20px 50px;
+     }}
+
+  /*About-Us*/
+#aboutUs{
+    background-color: #FFFFFF;   
+}
+#aboutUs .container{   
+    display:grid;
+    grid-template-columns: 1fr;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+}
+
+@media(min-width:1200px){#aboutUs .container{
+    display:flex;
+    padding-top: 100px;
+} 
+}
+
+#aboutUs .container .aboutUs-text .stats{
+    display: flex;
+padding: 0px;
+}
+
+@media(min-width:768px){#aboutUs .container .aboutUs-text .stats{
+    display: grid;
+    justify-content: space-between;
+    padding: 0px;
+    grid-template-columns:auto auto auto;
+}}
+
+@media(min-width:1200px){#aboutUs .container .aboutUs-text .stats{
+    grid-template-columns:1fr 1fr 1fr;
+}}
+
+
+#aboutUs .container .aboutUs-text h3{
+    font-size: 24px;
+    border-bottom: 4px solid #25E6C8;
+    font-family: 'Roboto Slab', serif;
+    font-weight: normal;
+    padding-right: 100px;
+}
+
+@media(min-width:768px){#aboutUs .container .aboutUs-text h3{
+    font-size: 28px;
+}}
+
+@media(min-width:1400px){#aboutUs .container .aboutUs-text h3{
+    font-size: 40px;
+}}
+
+
+#aboutUs .container .aboutUs-text .stats div{
+    margin-right: 10px;    
+}
+
+#aboutUs .container .aboutUs-text .standardtext{
+font-size: 14px;
+}
+
+@media(min-width:768px){#aboutUs .container .aboutUs-text .standardtext{
+    font-size: 18px;
+}}
+
+#aboutUs .container .aboutUs-text #text-1{
+    padding-bottom: 10px;
+}
+
+#aboutUs .container .aboutUs-text .aboutUs-numbers{
+color: #2BAAEC;
+font-family: 'Roboto Slab', serif;
+font-size: 20px;
+margin-bottom: 0px;
+}
+
+@media(min-width: 768px){#aboutUs .container .aboutUs-text .aboutUs-numbers{
+    font-size: 30px;
+}}
+
+@media(min-width: 1400px){#aboutUs .container .aboutUs-text .aboutUs-numbers{
+    font-size: 40px;
+}}
+
+#aboutUs .container .aboutUs-text h2{
+    font-size: 13px;
+margin-top: 5px;
+font-weight: normal;
+}
+
+@media(min-width:768px){#aboutUs .container .aboutUs-text h2{
+    font-size: 18px;
+}}
+
+#aboutUs .container .placeholder-aboutUs{
+    display:none;
+    }
+
+@media(min-width:1200px){#aboutUs .container .placeholder-aboutUs{
+    display:block;
+    height: 600px; 
+}
+} 
+
+@media(min-width:1400px){#aboutUs .container .placeholder-aboutUs{
+    height: 720px;
+    margin-left: 100px; 
+}
+}  
+
+#aboutUs .container .aboutUs-text .bluetext{
+color: #2BAAEC;
+}
+
+
+    /*Services-Mobile*/
+    #services{
+        background-color: #F7F7F7;
+    }
+
+    .service-box{
+        background-color: #FFFFFF;
+        height: 290px;
+        width: 320px;
+        border-radius: 10px; 
+    }
+
+    @media(min-width: 768px) {.service-box:hover{
+        box-shadow: 10px 10px 30px  rgba(0, 0, 0, 0.2);
+        transition: all 0.5s ease-in-out;
+       }
+        }
+
+
+    @media(min-width: 768px) {  .service-box{
+        height: 280px;
+        width: 320px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }} 
+
+    @media(min-width: 1200px) {  .service-box{
+        height: 400px;
+        width: 500px;
+        padding: 60px;    
+    }} 
+
+    @media(min-width: 1400px) {  .service-box{
+        height: 410px;
+        width: 430px;
+        padding: 60px;    
+    }} 
+
+    .service-box h2{
+        font-family: 'Roboto Slab', serif;
+        font-weight: normal;
+        font-size: 20px;
+        margin-top: 30px
+    }
+
+    @media (min-width: 768px){.service-box h2{
+        font-size: 16px;
+        margin-top: 10px;
+    }}
+
+    @media (min-width: 1200px){.service-box h2{
+        font-size: 22px;
+    }}
+
+    .service-box p{
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+    }
+
+    @media (min-width:768px){.service-box p{
+        font-size: 14px;
+    }}  
+
+    @media (min-width:1200px){.service-box p{
+        font-size: 18px;
+    }}   
+
+
+#services .container{
+        display:grid;
+        text-align: center;
+        justify-content: center;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding-left: 30px;
+        padding-right: 30px;
+           }
+
+
+@media (min-width:768px) {#services .container{
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    gap: 2rem;
+    padding-bottom: 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "t1 t1"
+                         "b1 b2"
+                         "b3 b4"
+                         "b5 b6";
+}}
+
+@media (min-width:1400px) {#services .container{
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    gap: 2rem;
+    padding-bottom: 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "b7 t1 b8"
+                         "b1 b2 b3"
+                         "b4 b5 b6";
+}}
+
+@media (min-width:768px){#service-title {
+    grid-area: t1;
+}}
+@media (min-width:768px){#service-box1 {
+    grid-area: b1;
+}}
+@media (min-width:768px){#service-box2 {
+    grid-area: b2;
+}}
+@media (min-width:768px){#service-box3 {
+    grid-area: b3;
+}}
+@media (min-width:768px){#service-box4 {
+    grid-area: b4;
+}}
+@media (min-width:768px){#service-box5 {
+    grid-area: b5;
+}}
+@media (min-width:768px){#service-box6 {
+    grid-area: b6;
+}}
+
+@media (min-width:1400px){#service-title {
+    grid-area: t1;
+}}
+@media (min-width:1400px){#service-box1 {
+    grid-area: b1;
+}}
+@media (min-width:1400px){#service-box2 {
+    grid-area: b2;
+}}
+@media (min-width:1400px){#service-box3 {
+    grid-area: b3;
+}}
+@media (min-width:1400px){#service-box4 {
+    grid-area: b4;
+}}
+@media (min-width:1400px){#service-box5 {
+    grid-area: b5;
+}}
+@media (min-width:1400px){#service-box6 {
+    grid-area: b6;
+}}
+
+@media (min-width:1400px){#service-box7{
+    grid-area: b7;
+    background-color: #F7F7F7;
+}}
+
+@media (min-width:1400px){#service-box8{
+    grid-area: b8;
+    background-color: #F7F7F7;
+}
+}
+
+#services .container #service-title h1{
+    border-bottom: 4px solid #25E6C8;
+    font-family: 'Roboto Slab', serif;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+@media (min-width:768px){#services .container #service-title h1{
+    font-size: 30px;
+}}
+
+@media (min-width:1200px){#services .container #service-title h1{
+        border-bottom: 4px solid #25E6C8 ;
+        font-size: 40px;
+}}
+
+
+
+
+#services .container  .service-image{
+    background: #25E6C8;
+    height: 60px;
+    width: 60px;
+    padding: 5px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+@media (min-width:768px){ #services .container  .service-image{
+    background: #25E6C8;
+    padding: 15px;
+    height:90px;
+    width: 90px;
+    border-radius: 50%;
+    margin-top: 30px;
+    }}
+
+@media (min-width:1200px){ #services .container  .service-image{
+background: #25E6C8;
+padding: 30px;
+height: 120px;
+width: 120px;
+border-radius: 50%;
+}}
+
+#services .container  .service-image:hover{
+    background-color: #2BAAEC;
+    box-shadow: 0 0 0 10px rgba(43, 170, 236, .2);   
+}
+
+
+
+
+    /*div-appointment*/
+#appointment {
+    background:rgba(43, 170, 236, .8);
+    font-family: 'Roboto Slab', serif;
+}
+
+
+#appointment .container .appointmentflex{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+padding-left: 8px;
+padding-right: 8px;
+padding-top: 1rem;
+padding-bottom: 1rem;
+}
+
+@media(min-width:768px){#appointment .container .appointmentflex{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    }}
+
+#appointment .container .appointmentflex  .txtappointment {
+color: white;
+    font-size: 10px;
+}
+
+#appointment .container .appointmentflex button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 8px;
+  background: #FFFFFF;
+  color: #2BAAEC;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 2px solid #FFFFFF;
+}
+
+#appointment .container .appointmentflex button:hover{
+    background-color: transparent;
+    color:#FFFFFF ;
+}
+
+
+@media (min-width: 768px) {#appointment .container .appointmentflex    {
+ padding-top: 2rem;
+ padding-bottom: 2rem;
+    }}
+
+    @media (min-width: 1200px) {#appointment .container .appointmentflex    {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+           }}
+
+
+@media (min-width: 768px) {#appointment .container .appointmentflex  .txtappointment  {
+    font-size: 18px;
+    padding-left: 10px;
+    }}
+@media (min-width: 1200px) {#appointment .container .appointmentflex  .txtappointment {
+        font-size: 22px;
+        }}
+    
+@media (min-width: 1400px) {#appointment .container .appointmentflex  .txtappointment {
+        font-size:  30px; 
+        
+     }}
+
+@media (min-width: 768px) {#appointment .container .appointmentflex button   {
+        font-size: 12px;
+        padding:   10px 30px;
+        border-radius: 10px;
+}}
+
+@media (min-width: 1200px) {#appointment .container .appointmentflex button   {
+    font-size: 14px;
+    padding:   20px 30px;
+    border-radius: 10px;
+}}
+
+@media (min-width: 1400px) {#appointment .container .appointmentflex button   {
+    font-size: 18px;
+    height: 60px;
+    width: 285px;
+   padding-top: 18px;
+   padding-left: 50px;
+ border-radius: 10px
+}}
+
+     /*workinghours Mobile*/
+#mobileworkinghours .container {
+    display: flex;
+    justify-content: center; 
+    align-self: center;  
+}
+@media (min-width: 768px){#mobileworkinghours {display: none;}}
+#mobileworkinghours .container .working-hours i {
+    margin-right: 0.1rem;
+    font-size: 0.9rem;
+ color: #2BAAEC;
+ 
+}
+#mobileworkinghours .container .working-hours span   {
+    margin-right: 0.3rem;
+    font-size: 10px;
+ color: #626262;
+}
+
+
+
+     /*socialmedia Mobile*/
+#mobilesocialmedia{
+    background-color: white;
+}
+#mobilesocialmedia .container .socialmedia{
+    display: flex;
+justify-content: center;
+    list-style: none;
+    padding-right: 65px;
+    margin: 2px;
+    font-size: 14px;
+}
+@media (min-width: 768px) { 
+    #mobilesocialmedia{
+    display: none;
+    }
+}
+
+#mobilesocialmedia .container .socialmedia  li{
+margin-left: 2rem;
+}
+
+#mobilesocialmedia a{
+    font-size: 1rem;
+    color: #2BAAEC;
+}
+#mobilesocialmedia a :hover{
+    color:#25E6C8;
+}
+
+    /*footer*/
+#footertoothweb{
+    background: #2BAAEC;
+}
+
+#footertoothweb .container{
+display: flex;
+justify-content: center;
+
+}
+.footertext{
+    font-size: 10px;
+    padding: 10px 0;
+    color: rgba(243, 251, 255,.6);
+}
+
+@media (min-width: 768px) {.footertext  {
+    font-size: 12px;
+
+    }}
+@media (min-width: 1200px) {.footertext{
+        font-size: 14px;
+        }}
+    
+@media (min-width: 1400px) {.footertext {
+        font-size:  16px; 
+        
+     }}
+
