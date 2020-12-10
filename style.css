@@ -241,10 +241,10 @@ margin-left: -47px;
   }} 
   
 @media (min-width: 768px) {#showcase .container #li2Descrip{
-    font-size: 0.75rem;
+    font-size: 0.875rem;
     }}
 @media (min-width: 1200px) {#showcase .container #li2Descrip{
-        font-size: 0.875rem;
+        font-size: 1rem;
         margin-top: 0.5rem ;
         margin-bottom: 1rem;  
         }}
@@ -377,7 +377,7 @@ padding: 0px;
 
 
 #aboutUs .container .aboutUs-text .stats div{
-    margin-right: 10px;    
+    margin-right: 20px;    
 }
 
 #aboutUs .container .aboutUs-text .standardtext{
@@ -448,21 +448,15 @@ color: #2BAAEC;
         width: 300px;
         border-radius: 10px;
         margin-left: 20px; 
+        padding-left: 10px;
+        padding-right: 10px;
         transition: all 0.5s ease-in-out;
     }
 
     @media(min-width: 768px) {  .service-box{
         height: 300px;
         width: 350px;
-        padding-left: 10px;
-        padding-right: 10px;
         margin-left: 0px;
-    }} 
-
-    @media(min-width: 1200px) {  .service-box{
-        height: 400px;
-        width: 500px;
-        padding: 60px;    
     }} 
 
     @media(min-width: 1920px) {  .service-box{
@@ -471,37 +465,7 @@ color: #2BAAEC;
         padding: 60px;    
     }} 
 
-    .service-box h2{
-        font-family: 'Roboto Slab', serif;
-        font-weight: normal;
-        font-size: 20px;
-        margin-top: 30px
-    }
-
-    @media (min-width: 768px){.service-box h2{
-        font-size: 16px;
-        margin-top: 10px;
-    }}
-
-    @media (min-width: 1200px){.service-box h2{
-        font-size: 22px;
-    }}
-
-    .service-box p{
-        font-family: 'Roboto', sans-serif;
-        font-size: 14px;
-    }
-
-    @media (min-width:768px){.service-box p{
-        font-size: 14px;
-    }}  
-
-    @media (min-width:1200px){.service-box p{
-        font-size: 18px;
-    }}   
-
-
-#services .container{
+    #services .container{
         display:grid;
         text-align: center;
         justify-content: center;
@@ -514,12 +478,25 @@ color: #2BAAEC;
     text-align: center;
     justify-content: center;
     gap: 2rem;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "t1 t1"
                          "b1 b2"
                          "b3 b4"
                          "b5 b6";
+}}
+
+
+@media (min-width:1200px) {#services .container{
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    gap: 2rem;
+    padding-bottom: 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "b7 t1 b8"
+                         "b1 b2 b3"
+                         "b4 b5 b6";
 }}
 
 @media (min-width:1920px) {#services .container{
@@ -556,38 +533,67 @@ color: #2BAAEC;
     grid-area: b6;
 }}
 
-@media (min-width:1920px){#service-title {
+@media (min-width:1200px){#service-title {
     grid-area: t1;
 }}
-@media (min-width:1920px){#service-box1 {
+@media (min-width:1200px){#service-box1 {
     grid-area: b1;
 }}
-@media (min-width:1920px){#service-box2 {
+@media (min-width:1200px){#service-box2 {
     grid-area: b2;
 }}
-@media (min-width:1920px){#service-box3 {
+@media (min-width:1200px){#service-box3 {
     grid-area: b3;
 }}
-@media (min-width:1920px){#service-box4 {
+@media (min-width:1200px){#service-box4 {
     grid-area: b4;
 }}
-@media (min-width:1920px){#service-box5 {
+@media (min-width:1200px){#service-box5 {
     grid-area: b5;
 }}
-@media (min-width:1920px){#service-box6 {
+@media (min-width:1200px){#service-box6 {
     grid-area: b6;
 }}
 
-@media (min-width:1920px){#service-box7{
+@media (min-width:1200px){#service-box7{
     grid-area: b7;
     background-color: #F7F7F7;
 }}
 
-@media (min-width:1920px){#service-box8{
+@media (min-width:1200px){#service-box8{
     grid-area: b8;
     background-color: #F7F7F7;
 }
 }
+
+    .service-box h2{
+        font-family: 'Roboto Slab', serif;
+        font-weight: normal;
+        font-size: 16px;
+        margin-top: 10px
+    }
+
+    @media (min-width: 768px){.service-box h2{
+        font-size: 20px;
+        margin-top: 10px;
+    }}
+
+    @media (min-width: 1200px){.service-box h2{
+        font-size: 22px;
+    }}
+
+    .service-box p{
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+    }
+
+    @media (min-width:768px){.service-box p{
+        font-size: 14px;
+    }}  
+
+    @media (min-width:1200px){.service-box p{
+        font-size: 18px;
+    }}   
 
 #services .container #service-title h1{
     border-bottom: 4px solid #25E6C8;
@@ -606,9 +612,9 @@ color: #2BAAEC;
 
 #services .container  .service-image{
     background: #25E6C8;
-    height: 60px;
-    width: 60px;
-    padding: 5px;
+    padding: 10px;
+    height:75px;
+    width: 75px;
     border-radius: 50%;
     margin-top: 20px;
     transition: all 0.25s ease-in-out;
@@ -618,11 +624,10 @@ color: #2BAAEC;
     padding: 15px;
     height:90px;
     width: 90px;
-    border-radius: 50%;
     margin-top: 30px;
     }}
 
-@media (min-width:1200px){ #services .container  .service-image{
+@media (min-width:1920px){ #services .container  .service-image{
 padding: 30px;
 height: 120px;
 width: 120px;
@@ -662,15 +667,14 @@ padding-bottom: 1rem;
 }
 
 @media(min-width:768px){#appointment .container .appointmentflex{
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 2rem;
     }}
-
     @media(min-width:1200px){#appointment .container .appointmentflex{
         padding-left: 0;
         padding-right: 0;
+        }}
+    
+    @media(min-width:1920px){#appointment .container .appointmentflex{
         padding-top: 3.75rem;
         padding-bottom: 3.75rem;
         }}
@@ -684,7 +688,7 @@ color: white;
     font-size: 18px;
     }}
 @media (min-width: 1200px) {#appointment .container .appointmentflex  .txtappointment {
-        font-size: 22px;
+        font-size: 24px;
         }}
     
 @media (min-width: 1920px) {#appointment .container .appointmentflex  .txtappointment {
@@ -715,12 +719,6 @@ color: white;
 }}
 
 @media (min-width: 1200px) {#appointment .container .appointmentflex button   {
-    font-size: 14px;
-    padding:   20px 30px;
-    border-radius: 10px;
-}}
-
-@media (min-width: 1920px) {#appointment .container .appointmentflex button   {
     font-size: 18px;
     height: 60px;
     width: 285px;
